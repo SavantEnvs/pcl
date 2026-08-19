@@ -1,0 +1,10 @@
+project: savantenvs/pcl
+target: ply_reader_fuzzer
+
+cmds:
+  - cmd: /mayhem/ply_reader_fuzzer
+    libfuzzer: true
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/ply_reader_fuzzer/testsuite
